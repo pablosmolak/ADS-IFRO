@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author pablosmolak
- *
- */
-module listaEncadeada {
-}
