@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="formulario" id="formulario">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div>
+            <label for="curso">Curso:</label>
+            <select id="curso">
+                <option value="HTML_CSS">HTML e CSS</option>
+                <option value="git">Git</option>
+                <option value="javascript">JavaScrip</option>
+                <option value="banco_dados">Banco de Dados</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="atendimento">Atendimento Especial:</label>
+            <textarea id="atendimento"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="termos">
+            <label for="termos">Estou de acordo com os termos de serviços</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- <button id="mensagem">Mensagem</button> -->
+    
+</body>
+    <script src="script.js"></script>
+</html>

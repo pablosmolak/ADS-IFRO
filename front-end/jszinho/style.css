@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.formulario{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+}

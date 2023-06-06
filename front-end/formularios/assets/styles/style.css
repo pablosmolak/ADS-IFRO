@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #274156;
+    --primaryAlpha: #274156b7;
+    --white: #fbfcff;
+}
+.corpo {
+    padding: 20px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus{
+    background-color: beige;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    outline: none;
+}
+
+.select:focus{
+    background-color: beige;
+}
+
+.label {
+    display: block;
+}
+
+.botao {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+
+    
+}
+
+.botao:hover {
+    background-color: var(--primaryAlpha);
+}
+
