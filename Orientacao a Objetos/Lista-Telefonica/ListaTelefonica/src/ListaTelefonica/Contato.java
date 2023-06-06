@@ -5,6 +5,7 @@ public class Contato {
     private int numero;
     private String nome;
     private String telefone;
+    private Boolean contatoEmergencia;
     private static int numerogeral = 0;
 
     public Contato(String nome, String telefone){
@@ -14,6 +15,14 @@ public class Contato {
         this.numero = numerogeral;
     }
 
+    public Contato(String nome, String telefone, Boolean emergencia){
+        this.nome = nome;
+        this.telefone = telefone;
+        this.contatoEmergencia = emergencia;
+        numerogeral++;
+        this.numero = numerogeral;
+
+    }
     public void ligar(){
 
     }
@@ -29,5 +38,8 @@ public class Contato {
 
     public int getNumero() {
         return numero;
+    }
+    public Boolean getContatoEmergencia() {
+        return contatoEmergencia;
     }
 }

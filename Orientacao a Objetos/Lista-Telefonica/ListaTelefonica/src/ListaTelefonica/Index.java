@@ -28,6 +28,9 @@ public class Index {
                 case 2:
                     l.listarContatos();
                     break;
+                case 3:
+                    l.escolherContato();
+                    break;
             }
 
         }while(opcao != 0);
