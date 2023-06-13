@@ -5,7 +5,7 @@ public class Contato {
     private int numero;
     private String nome;
     private String telefone;
-    private Boolean contatoEmergencia;
+    private Boolean contatoEmergencia = false;
     private static int numerogeral = 0;
 
     public Contato(String nome, String telefone){

@@ -1,5 +1,6 @@
 package ListaTelefonica;
 
+import java.lang.invoke.StringConcatFactory;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class Lista {
         String nome = ler.next();
         System.out.print("Número: ");
         String numero = ler.next();
-        System.out.print("É um contato de emergência? 1-Sim 2-Não");
+        System.out.print("É um contato de emergência? 1-Sim 2-Não ");
         int emergencia = ler.nextInt();
 
         if(emergencia == 1){
@@ -55,6 +56,23 @@ public class Lista {
         }
     }
 
+    public void excluirContato(Contato c){
+        this.contatos.remove(c);
+    }
+
+    public void excluirContato(){
+        System.out.println("----Exclusão----");
+        System.out.println("Informe o nome do contato a ser excluido");
+        String nome = leitot.nextLine();
+        Contato c = FindContato(nome);
+        if(c != null){
+            this.contatos.remove(c);
+            System.out.println("Contato excluido com sucesso!");
+        }else{
+            System.out.println("Não foi possivel excluir o contato na lista");
+        }
+    }
+
     public void escolherContato(){
         listarContatos();
         System.out.print("Informe o nome do contato que deseja entrar: ");
@@ -90,10 +108,9 @@ public class Lista {
             }while(opcao != 0);
         }
 
-
     }
 
-    public Contato FindContato(int numero) {
+    private Contato FindContato(int numero) {
 		for(Contato c : contatos) {
 			if(c.getNumero() == numero) {
 				return c;
@@ -101,5 +118,15 @@ public class Lista {
 		}
 		return null;
 	}
+    
+    private Contato FindContato(String nome){
+        for(Contato c : contatos){
+            if(c.getNome().equals(nome)){
+                return c;
+            }
+            
+        }
+        return null;
+    }
     
 }
