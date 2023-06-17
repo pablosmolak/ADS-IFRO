@@ -12,12 +12,13 @@ public class Index {
 
         do{
 
-            System.out.println("----Lista Telefônica----");
+            System.out.println("\n----Agenda----");
             System.out.println("\nOperações:");
             System.out.println("1 - Novo Contato");
             System.out.println("2 - Listar Contatos");
-            System.out.println("3 - Listar Contatos de Emergencia");
+            System.out.println("3 - Listar Contatos de Emergência");
             System.out.println("4 - Nova Ligação");
+            System.out.println("5 - Excluir Contato");
             System.out.println("0 - Sair");
             System.out.print("\nInforme a operação desejada: ");
             opcao = ler.nextInt();
@@ -30,16 +31,16 @@ public class Index {
                     l.listarContatos();
                     break;
                 case 3:
-                    l.listarContatosEmergencia();
+                    l.listarContatos(true);
                     break;
                 case 4:
                     l.escolherContato();
                     break;
+                case 5:
+                    l.excluirContato();
+                    break;
             }
 
         }while(opcao != 0);
-
-
-
     }
 }
