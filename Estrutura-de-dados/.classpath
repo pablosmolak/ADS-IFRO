@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="filas/src"/>
+	<classpathentry kind="src" path="ListaEncadeada/src"/>
+	<classpathentry kind="src" path="Pilha-2/src"/>
+	<classpathentry kind="src" path="Pilha/src"/>
+	<classpathentry kind="output" path="ListaEncadeada/bin"/>
+</classpath>
