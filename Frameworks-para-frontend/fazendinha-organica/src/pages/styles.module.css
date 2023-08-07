@@ -1,0 +1,33 @@
+.capa {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/image-9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.capa_texto {
+    font-size: 48px;
+    padding: 7px 15px;
+    background-color: rgba(34,82,67,0.8);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.corpo {
+    background-color: rgb(238, 238, 184);
+}
+
+.corpo_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
