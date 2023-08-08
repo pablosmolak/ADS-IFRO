@@ -5,6 +5,7 @@ import Cards from "@/components/Cards";
 export default function Home() {
   return (
     <>
+      
       <Cabecalho/>
       <section className={styles.capa}>
             <img src="/logo.svg"></img>
