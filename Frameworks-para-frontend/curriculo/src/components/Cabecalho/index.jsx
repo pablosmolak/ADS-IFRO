@@ -1,11 +1,14 @@
+import styles from "./styles.module.css"
 export default function Cabecalho(){
     return(
         <>
-            <ul>
-                <li>Inicio</li>
-                <li>Formação</li>
-                <li>Projetos</li>
-            </ul>
+            <nav>
+                <ul className={styles.menu}>
+                    <li className={styles.menu_botoes}>Inicio</li>
+                    <li className={styles.menu_botoes}>Formação</li>
+                    <li className={styles.menu_botoes}>Projetos</li>
+                </ul>
+            </nav>
         </>
     )
 }

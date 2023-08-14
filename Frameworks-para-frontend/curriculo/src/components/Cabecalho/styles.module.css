@@ -1,0 +1,20 @@
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 0px 0px 0px 7.5rem;
+    background-color: #718387;
+}
+  
+.menu_botoes{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.30rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;  
+}
+  
+.menu_botoes:hover{
+    color: #718387;
+    background-color: #ffffff;
+}
