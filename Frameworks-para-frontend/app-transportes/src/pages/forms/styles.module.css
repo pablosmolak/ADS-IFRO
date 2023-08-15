@@ -1,0 +1,6 @@
+.page{
+    display: flex;
+    border: 1px #000 solid;
+    align-items: center;
+    flex-direction: column;
+}
