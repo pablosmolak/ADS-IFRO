@@ -9,48 +9,20 @@
     },
     {
       "transacao": "Depósito",
-      "valor": "100",
-      "data": "21/11/2022",
-      "mes": "Novembro",
+      "valor": "2",
+      "data": "15/08/2023",
+      "mes": "Agosto",
       "id": 2
     },
     {
       "transacao": "Depósito",
-      "valor": "500",
-      "data": "05/01/2023",
-      "mes": "Janeiro",
+      "valor": "37",
+      "data": "15/08/2023",
+      "mes": "Agosto",
       "id": 3
-    },
-    {
-      "transacao": "Transferência",
-      "valor": "15000000",
-      "data": "05/01/2023",
-      "mes": "Janeiro",
-      "id": 4
-    },
-    {
-      "transacao": "Transferência",
-      "valor": "250",
-      "data": "05/01/2023",
-      "mes": "Janeiro",
-      "id": 5
-    },
-    {
-      "transacao": "",
-      "valor": "2555555",
-      "data": "08/08/2023",
-      "mes": "Agosto",
-      "id": 6
-    },
-    {
-      "transacao": "",
-      "valor": "58448",
-      "data": "08/08/2023",
-      "mes": "Agosto",
-      "id": 7
     }
   ],
   "saldo": {
-    "valor": 34885997
+    "valor": 1e+78
   }
 }

@@ -23,4 +23,17 @@ describe('Pagina inicial', () => {
   it('Deve renderizar o titulo 4 card', () => {
     cy.get('.Inicio_vantagens__itens__6aJyb > :nth-child(4) > h3').contains('Seguro Dispositivos')
   })
+
+})
+
+describe('Botões página inicial', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/')
+  })
+
+  it('Deve renderizar o Botão', () =>{
+    cy.get('[data-test="botao-cadastro"]').contains('Abrir minha conta')
+    cy.get('[data-test="botao-login"]').contains('Já tenho conta')
+
+  })
 })
