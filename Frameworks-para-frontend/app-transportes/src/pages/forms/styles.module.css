@@ -2,9 +2,9 @@
     display: flex;
     border: 1px #000 solid;
     flex-direction: column;
+    
 }
 
 .conteudo{
-    display: flex;
-    justify-content: center;
+    margin:15px;
 }

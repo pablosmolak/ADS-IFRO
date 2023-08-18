@@ -6,6 +6,7 @@ import Cabecalho from "@/components/Cabecalho"
 import Input from "@/components/Input"
 import InputLabel from "@/components/InputLabel"
 import InputRadio from "@/components/InputRadio"
+import TextArea from "@/components/TextArea"
 
 export default function Forms(){
     const [nome, setNome] = useState("Pablo")
@@ -45,6 +46,8 @@ export default function Forms(){
                         <div>
                             <Label texto="Sexo:" forhtml="sexo"/>
                         </div>
+
+                        <TextArea placeholder="Digite a observação aqui!"/>
                     <Button value="Realizar Inscrição"/>
                     </form>  
                 </div> 
