@@ -1,10 +1,10 @@
 import styles from "./styles.module.css"
-export default function Cabecalho(){
+export default function Cabecalho({titulo}){
     
     return(
         <header>
             <h1 className={styles.titulo}>
-                App de transporte
+                {titulo}
             </h1>
         </header>
     )
