@@ -1,5 +1,5 @@
 import styles from "./styles.module.css"
-export default function InputRadio({nome,valor,change, id}){
+export default function InputRadio({nome,valor,change, id, checked}){
     return(
         <>
             <input className={styles.inputradio}
@@ -8,6 +8,8 @@ export default function InputRadio({nome,valor,change, id}){
                    id={id}
                    value={valor}
                    onChange={change}
+                   checked={checked}
+                   
             />
         </>
     )

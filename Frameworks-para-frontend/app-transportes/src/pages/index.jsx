@@ -6,7 +6,7 @@ import Rodape from "@/components/Rodape";
 export default function Home() {
   return (
     <>
-     <Cabecalho />
+     <Cabecalho titulo="Transporte"/>
      <Menu/>
      <h1>Página Inicial</h1>
      <Card titulo="Título 1" texto="Texto do Título 1"/>

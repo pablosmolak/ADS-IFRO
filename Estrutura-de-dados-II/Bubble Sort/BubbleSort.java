@@ -24,7 +24,7 @@ public class BubbleSort {
     }
     public static void main(String[] args) {
         
-        int[]num = {10,2,3,4,5};
+        int[]num = {1,2,3,4,6,5};
 
         bubbleSort(num);
 

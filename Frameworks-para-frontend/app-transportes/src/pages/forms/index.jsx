@@ -39,15 +39,25 @@ export default function Forms(){
                                     valor={email} 
                                     change={e => setEmail(e.target.value)}
                         />
-
-                        <InputRadio nome="sexo"></InputRadio>
-                        <Input tipo="radio" nome="sexo"></Input>
-                    
                         <div>
                             <Label texto="Sexo:" forhtml="sexo"/>
+                            <div>
+                                <InputRadio nome="sexo" valor="masculino" id="masc" checked></InputRadio>
+                                <Label texto="Masculino" forhtml="masc"/>
+                            </div>
+
+                            <div>
+                                <InputRadio nome="sexo" valor="feminino" id="fem" ></InputRadio>
+                                <Label texto="Feminino" forhtml="fem"/>
+                            </div>
+                           
                         </div>
 
-                        <TextArea placeholder="Digite a observação aqui!"/>
+                        <div>
+                            <Label texto="Descreva o atendimento especial:" forhtml="atendimentoEspecial"/>
+                            <TextArea placeholder="Digite a observação aqui!"/>
+                        </div>
+
                     <Button value="Realizar Inscrição"/>
                     </form>  
                 </div> 
