@@ -7,6 +7,9 @@ import Input from "@/components/Input"
 import InputLabel from "@/components/InputLabel"
 import InputRadio from "@/components/InputRadio"
 import TextArea from "@/components/TextArea"
+import Select from "@/components/Select"
+import Option from "@/components/Option"
+
 
 export default function Forms(){
     const [nome, setNome] = useState("Pablo")
@@ -52,13 +55,27 @@ export default function Forms(){
                             </div>
                            
                         </div>
+                        
+                            <Label htmlFor="curso">Curso:</Label>
+                            <Select id="curso" style={{width: "100%"}}>
+                                <Option valor="HTML e CSS">HTML e CSS</Option>
+                                <Option valor="Javascript" selected >Javascript</Option>
+                                <Option valor="Ruby" >Ruby</Option>
+                                <Option valor="Git e Github">Git e Github</Option>
+                                <Option valor="Typescript">Typescript</Option>
+                                <Option valor="PHP">PHP</Option>
+                                <Option valor="Java">Java</Option>
+                            </Select>
+                        <div>
+                          
+                        </div>
 
                         <div>
                             <Label texto="Descreva o atendimento especial:" forhtml="atendimentoEspecial"/>
-                            <TextArea placeholder="Digite a observação aqui!"/>
+                            <TextArea placeholder="Digite a observação aqui!" linhas="5"/>
                         </div>
 
-                    <Button value="Realizar Inscrição"/>
+                    <Button value="Realizar Inscrição" style={{width:"100%"}}/>
                     </form>  
                 </div> 
             </div>
