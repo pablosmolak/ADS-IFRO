@@ -10,14 +10,29 @@ import TextArea from "@/components/TextArea"
 import Select from "@/components/Select"
 import Option from "@/components/Option"
 import Checkbox from "@/components/Checkbox"
+import Thead from "@/components/Thead"
+import Table from "@/components/Table"
+import Th from "@/components/Th"
+import Td from "@/components/Td"
+import Tr from "@/components/Tr"
+import Tbody from "@/components/Tbody"
+import { v4 } from "uuid"
+import Image from 'next/image'
+
 
 
 export default function Forms(){
-    const [nome, setNome] = useState("")
-    const [email, setEmail] = useState("")
-    const [sexo, setSexo] = useState("")
-    const [curso, setCurso] = useState("")
-    const [atendimento, setAtendimento] = useState("")
+    const [nome, setNome] = useState()
+    const [email, setEmail] = useState()
+    const [sexo, setSexo] = useState()
+    const [curso, setCurso] = useState()
+    const [atendimento, setAtendimento] = useState()
+    const [termo, setTermo] = useState()
+
+    const [inscricoes, setInscricoes] = useState([]);
+
+    
+
     
 
     function enviar(e){
@@ -27,7 +42,21 @@ export default function Forms(){
         console.log(`Sexo: ${sexo}!`)
         console.log(`Curso: ${curso}!`)
         console.log(`Atendimento: ${atendimento}!`)
-    }
+        console.log(`Termos: ${termo ? "Sim" : "Não"}!`)
+
+        const data = {
+            id: v4(),
+            nome: nome ? nome : "",
+            email: email ? email : "",
+            genero: sexo ? sexo : "",
+            curso: curso ? curso : "",
+            descricao: atendimento ? atendimento : "",
+            acordo: termo ? "Sim" : "Não"
+          }
+      
+          setInscricoes((state) => ([...state,data]))
+        }
+    
     return(
         
         <>
@@ -87,7 +116,7 @@ export default function Forms(){
                         </div>
 
                         <div>
-                            <Checkbox id="termos"/>
+                            <Checkbox id="termos" change={e => setTermo(e.target.checked)}/>
                             <Label forhtml="termos" texto="Estou de acordo com o termos de serviço"/>
                         </div>
 
@@ -95,6 +124,43 @@ export default function Forms(){
                     </form>  
                 </div> 
             </div>
-        </>
+
+
+            <Table>
+            <Thead>
+              <Tr>
+                <Th>Nome</Th>
+                <Th>Email</Th>
+                <Th>Sexo</Th>
+                <Th>Curso</Th>
+                <Th>Descrição</Th>
+                <Th>Termos</Th>
+                <Th>Ações</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {inscricoes?.map((inscricao) => (
+                <Tr key={inscricao.id}>
+                  <Td>{inscricao.nome}</Td>
+                  <Td>{inscricao.email}</Td>
+                  <Td>{inscricao.genero}</Td>
+                  <Td>{inscricao.curso}</Td>
+                  <Td>{inscricao.descricao}</Td>
+                  <Td>{inscricao.acordo}</Td>
+                  <Td>
+                    <Image
+                    width={24}
+                    height={24}
+                    alt="Ícone de deletar"
+                    src={"/delete.svg"}
+                    style={{ cursor: "pointer"}}
+                    title="Remover inscrição"
+                    />
+                  </Td> 
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
+      </>
     )
 }

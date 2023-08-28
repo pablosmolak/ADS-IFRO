@@ -1,13 +1,9 @@
 import style from "./styles.module.css"
 
-export default function Checkbox({id, change,...props}){
+export default function Checkbox({id}){
     return(
     <>
-        <input type="checkbox" 
-               id={id}
-               onChange={change} 
-               {...props}
-        />
+        <input type="checkbox" id={id}/>
     </>
     )
 }
