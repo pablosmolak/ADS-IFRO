@@ -19,3 +19,16 @@
     display: flex;
     gap: .3em;
 }
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.termos{ 
+    display: flex;
+    align-items: center;
+    gap:5px;
+    
+}
