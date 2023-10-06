@@ -1,0 +1,17 @@
+.page{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.conteudo{
+    margin:15px;
+   
+}
+
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

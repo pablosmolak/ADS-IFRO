@@ -1,3 +1,4 @@
+import Cabecalho from "@/components/Cabecalho"
 import axios from "axios"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
@@ -19,6 +20,7 @@ export default function EventosHome(){
    
     return(
         <>
+            <Cabecalho titulo="Plataforma de Eventos"/>
             <h1>Detalhe do Evento</h1>
             <h2>{`Evento: ${evento.titulo}`}</h2>
             <p>{`Descrição: ${evento.descricao}` }</p>

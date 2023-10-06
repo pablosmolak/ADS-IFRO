@@ -20,7 +20,6 @@ export default function ListCard(){
 
     return(
         <>
-            Lista de Eventos
             <div className={styles.listCard}>
                 {eventos.map(e => (
                 <Card
